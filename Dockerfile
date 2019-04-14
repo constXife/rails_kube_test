@@ -22,4 +22,4 @@ RUN SECRET_KEY_BASE=30ee23cfd63e800d6289032b2f494c2182629ba10e6ee53e8da2aa7d1cfb
 
 EXPOSE $PORT
 
-CMD ["./bin/entrypoint.sh"]
+CMD ["./bin/docker-entrypoint.sh"]
