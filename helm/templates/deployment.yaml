@@ -23,6 +23,9 @@ spec:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: SECRET_KEY_BASE
+              value: 30ee23cfd63e800d6289032b2f494c2182629ba10e6ee53e8da2aa7d1cfb4981a3be6b90c6a96d82beedc0ac6807ba8ff9b13a4f8a885294b1f40595fd5ed41c
           ports:
             - name: http
               containerPort: 80
