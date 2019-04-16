@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: constxife/rails_kube_test
+  repository: constxife/rails_test_kube
   tag: latest
   pullPolicy: Always
 
